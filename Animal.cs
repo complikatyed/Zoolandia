@@ -1,20 +1,18 @@
 using System;
+using Zoolandia.Species;
 
 namespace Zoolandia
 {
     public class Animal
     {
-        public string species { get; set; }
-        public static void sleep()
+        public Animal(string name)
         {
-            Console.WriteLine("Animal is now sleeping");
+            this.Name = name;
         }
-        public static void eat()
-        {
-            Console.WriteLine("Animal is now eating");
-        }
+        public string Name { get; set; }
+        public int Height { get; set; }
+        public int Weight { get; set; }
+       
     }
-
-
 
 }
