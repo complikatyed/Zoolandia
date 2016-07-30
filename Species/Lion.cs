@@ -12,16 +12,14 @@ namespace Zoolandia.Species
            this.SpeciesName = "Panthera leo";
            this.CommonName = "lion";
            this.IndividualName = nickname;
+           this.Diet = "carnivorous";
         }
 
         public override void Sleep()
         {
             Console.WriteLine("Lions sleep lying down");
         }
-        public override void Eat()
-        {
-            Console.WriteLine("Lions are carnivorous");
-        }
+
 
     }
 }
