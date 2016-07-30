@@ -12,16 +12,13 @@ namespace Zoolandia.Species
            this.SpeciesName = "Python anchietae";
            this.CommonName = "python";
            this.IndividualName = nickname;
+           this.Diet = "carnivorous";
         }
 
         public override void Sleep()
         {
             Console.WriteLine("Pythons sleep with their eyes open.");
             Console.WriteLine("Pythons are diurnal");
-        }
-        public override void Eat()
-        {
-            Console.WriteLine("Pythons are carnivorous.");
         }
 
 
