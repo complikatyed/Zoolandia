@@ -5,20 +5,20 @@ namespace Zoolandia.Genus
 {
     public class Mammalia : Animal
     {
-        
-        public Mammalia() : base() 
-        {}
-        public string ClassName
+        public override string GenusName
         { 
             get
             {
-                return this.ClassName;
-            }
-            set
-            {
-                this.ClassName = "mammal";
+                return "mammal";
             }
         }
+
+        // public void SetDietType(string diettype)
+        // {
+        //     this.Diet = diettype;
+        // }
+
+        public string SpeciesName { get; set; }
         public override bool Swim( bool swim)
         {
             return swim;

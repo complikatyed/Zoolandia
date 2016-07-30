@@ -5,18 +5,27 @@ namespace Zoolandia.Genus
 {
     public class Aves : Animal
     {
-        
-        public Aves() : base()
-        {}
-        public string ClassName
+        public override string GenusName
         { 
             get
             {
-                return this.ClassName;
+                return "bird";
             }
             set
             {
-                this.ClassName = "bird";
+                this.GenusName = "bird";
+            }
+        }
+
+        public override string Diet
+        {
+            get
+            {
+                return "omnivorous";
+            }
+            set
+            {
+                this.Diet = "omnivorous";
             }
         }
         public bool Wings

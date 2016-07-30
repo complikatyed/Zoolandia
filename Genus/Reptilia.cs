@@ -7,22 +7,24 @@ namespace Zoolandia.Genus
     public class Reptilia: Animal
     {
 
-        public Reptilia() : base() 
-        {}
-        public string ClassName
+        //public Reptilia() : base() 
+        //{}
+        public override string GenusName
         { 
             get 
             {
                 return "reptile";
             }
-            set
+        }
+        public string SpeciesName { get; set; }
+
+        public override string Diet
+        {
+            get
             {
-                this.ClassName = "reptile";
+                return "carnivorous";
             }
         }
-        //public string SpeciesName { get; set; }
-        public string Diet { get; set; }
-
         // add exothermic
         // add lay eggs  (use overload of Animal.Reproduction())
         public void Reproduce(string how){

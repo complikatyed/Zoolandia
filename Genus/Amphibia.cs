@@ -6,19 +6,31 @@ namespace Zoolandia.Genus
     public class Amphibia : Animal
     {
 
-        public Amphibia() : base() 
-        {}
-        public string ClassName
+        public override string GenusName
         { 
             get
             {
-                return this.ClassName;
+                return "amphibian";
             }
             set
             {
-                this.ClassName = "amphibian";
+                this.GenusName = "amphibian";
             }
         }
+
+        public override string Diet
+        {
+            get
+            {
+                return "omnivorous";
+            }
+            set
+            {
+                this.Diet = "omnivorous";
+            }
+        }
+
+        public string SpeciesName{ get; set;}
         public override bool Swim( bool swim)
         {
             return swim;
