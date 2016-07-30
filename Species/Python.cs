@@ -10,22 +10,20 @@ namespace Zoolandia.Species
         {
            this.ClassName = "Reptilia";
            this.SpeciesName = "Python anchietae";
+           this.CommonName = "python";
            this.IndividualName = nickname;
         }
 
-        public virtual void Sleep()
+        public override void Sleep()
         {
             Console.WriteLine("Pythons sleep with their eyes open.");
             Console.WriteLine("Pythons are diurnal");
         }
-        public virtual void Eat()
+        public override void Eat()
         {
             Console.WriteLine("Pythons are carnivorous.");
         }
-        public string Die()
-        {
-            return "This animal has died.";
-        }
+
 
     }
 }

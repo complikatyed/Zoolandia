@@ -37,6 +37,8 @@ namespace Zoolandia
             bonobo.Sleep();
             bonobo.Eat();
             Console.WriteLine(" ");
+            Console.WriteLine(bonobo.Die());
+            Console.WriteLine(giraffe.Die());
 
 
 
