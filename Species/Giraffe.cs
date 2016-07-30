@@ -1,14 +1,13 @@
 using System;
-using Zoolandia;
+using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class Giraffe : Animal
+    public class Giraffe : Mammalia
     {
 
         public Giraffe(string nickname)
         {
-           this.ClassName = "Mammalia";
            this.SpeciesName = "Giraffa camelopardalis";
            this.CommonName = "giraffe";
            this.IndividualName = nickname;
@@ -20,6 +19,12 @@ namespace Zoolandia.Species
             Console.WriteLine("Giraffes sleep standing up");
         }
 
+        public virtual void Introduction()
+        {
+            Console.WriteLine("Meet our new " + this.CommonName + ", named " + this.IndividualName + ".");
+            Console.WriteLine(this.CommonName + "s are members of the class " + this.GenusName + ".");
+            Console.WriteLine("Their species name is " + this.SpeciesName + ".");
+        }
 
     }
 }

@@ -1,18 +1,16 @@
 using System;
-using Zoolandia;
+using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class Python : Animal
+    public class Python : Reptilia
     {
 
         public Python(string nickname)
         {
-           this.ClassName = "Reptilia";
            this.SpeciesName = "Python anchietae";
            this.CommonName = "python";
            this.IndividualName = nickname;
-           this.Diet = "carnivorous";
         }
 
         public override void Sleep()
@@ -20,6 +18,14 @@ namespace Zoolandia.Species
             Console.WriteLine("Pythons sleep with their eyes open.");
             Console.WriteLine("Pythons are diurnal");
         }
+
+        public virtual void Introduction()
+        {
+            Console.WriteLine("Meet our new " + this.CommonName + ", named " + this.IndividualName + ".");
+            Console.WriteLine(this.CommonName + "s are members of the class " + this.GenusName + ".");
+            Console.WriteLine("Their species name is " + this.SpeciesName + ".");
+        }
+
 
 
     }
