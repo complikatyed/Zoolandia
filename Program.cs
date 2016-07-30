@@ -24,6 +24,7 @@ namespace Zoolandia
             
             Python python = new Python("Slinky");
             python.Introduction();
+            Console.WriteLine(python.GenusName);
             python.Sleep();
             python.Eat();
             Console.WriteLine(" ");
