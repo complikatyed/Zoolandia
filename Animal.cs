@@ -45,6 +45,19 @@ namespace Zoolandia
         // Reproduce parameters:  egg/live young/marsupial type, many offspring/single (or few)
         public virtual void Grow(){}
         // Grow parameters:  fast/slowly
+
+        public virtual bool Swim( bool swim)
+        {
+            return swim;
+        }
+        public virtual bool Fly( bool fly)
+        {
+            return fly;
+        }
+        public virtual bool Sound( bool sound)
+        {
+            return sound;
+        }
         public virtual string Die()
         {
             return "Oh no! " + this.IndividualName + " has died.";
