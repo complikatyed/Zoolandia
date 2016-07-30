@@ -10,22 +10,19 @@ namespace Zoolandia.Species
         {
            this.ClassName = "Mammalia";
            this.SpeciesName = "Giraffa camelopardalis";
+           this.CommonName = "giraffe";
            this.IndividualName = nickname;
         }
 
-        public virtual void Sleep()
+        public override void Sleep()
         {
             Console.WriteLine("Giraffes sleep standing up");
         }
-        public virtual void Eat()
+        public override void Eat()
         {
             Console.WriteLine("Giraffes are herbivorous");
         }
-        public string Die()
-        {
-            return "This animal has died.";
-        }
-        // Die parameters:  are there any for this?
+
 
     }
 }

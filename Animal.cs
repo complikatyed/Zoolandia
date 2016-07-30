@@ -9,6 +9,7 @@ namespace Zoolandia
 
         public string ClassName { get; set; }
         public string SpeciesName { get; set; }
+        public string CommonName { get; set; }
         public string IndividualName { get; set; }
         public string Diet { get; set; }
 
@@ -22,9 +23,9 @@ namespace Zoolandia
         // Reproduce parameters:  egg/live young/marsupial type, many offspring/single (or few)
         public virtual void Grow(){}
         // Grow parameters:  fast/slowly
-        public string Die()
+        public virtual string Die()
         {
-            return "This animal has died.";
+            return this.IndividualName + " has died.";
         }
         // Die parameters:  are there any for this?
 
