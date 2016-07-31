@@ -34,5 +34,11 @@ namespace Zoolandia.Genus
 
         }
 
+        interface ISlither
+        {
+            void wriggle();
+            void writhe();
+        }
+
     }
 }

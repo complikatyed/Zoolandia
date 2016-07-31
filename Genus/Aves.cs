@@ -1,19 +1,14 @@
 using System;
-using Zoolandia;
 
 namespace Zoolandia.Genus
 {
-    public class Aves : Animal
+    public class Aves : Genus
     {
         public override string GenusName
         { 
             get
             {
                 return "bird";
-            }
-            set
-            {
-                this.GenusName = "bird";
             }
         }
 
@@ -23,35 +18,18 @@ namespace Zoolandia.Genus
             {
                 return "omnivorous";
             }
-            set
-            {
-                this.Diet = "omnivorous";
-            }
         }
-        public bool Wings
+        public override bool Wings
         {
             get
             {
-                return this.Wings;
-            }
-            set
-            {
-                this.Wings = true;
+                return true;
             }
         }
 
         public override bool Swim( bool swim)
         {
             return swim;
-        }
-        public override bool Fly( bool fly)
-        {
-            return fly;
-        }
-
-        public override bool Sound( bool sound)
-        {
-            return sound;
         }
         public override void Reproduce(){
             Console.WriteLine("Birds lay eggs");
