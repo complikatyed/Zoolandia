@@ -1,9 +1,8 @@
 using System;
-using Zoolandia;
 
 namespace Zoolandia.Genus
 {
-    public class Mammalia : Animal
+    public class Mammalia : Genus
     {
         public override string GenusName
         { 
@@ -13,12 +12,6 @@ namespace Zoolandia.Genus
             }
         }
 
-        // public void SetDietType(string diettype)
-        // {
-        //     this.Diet = diettype;
-        // }
-
-        public string SpeciesName { get; set; }
         public override bool Swim( bool swim)
         {
             return swim;

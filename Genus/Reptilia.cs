@@ -1,14 +1,11 @@
 //snakes, lizards, crocodiles, turtles, and tortoises
 using System;
-using  Zoolandia;
 
 namespace Zoolandia.Genus
 {
-    public class Reptilia: Animal
+    public class Reptilia: Genus
     {
 
-        //public Reptilia() : base() 
-        //{}
         public override string GenusName
         { 
             get 
@@ -16,7 +13,6 @@ namespace Zoolandia.Genus
                 return "reptile";
             }
         }
-        public string SpeciesName { get; set; }
 
         public override string Diet
         {
