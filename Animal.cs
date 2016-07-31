@@ -18,7 +18,9 @@ namespace Zoolandia
         public string CommonName { get; set; }
         public string IndividualName { get; set; }
         public virtual string Diet { get; set; }
-
+        public virtual bool Wings { get; set; }
+        public virtual int Legs { get; set; }
+        
         public virtual void Sleep(){}
         // Sleep parameters might include:  nocturnal/diurnal, standing/hanging/lying, true/false
         
