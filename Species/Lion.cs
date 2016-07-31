@@ -17,16 +17,8 @@ namespace Zoolandia.Species
 
         public override void Sleep()
         {
-            Console.WriteLine("Lions sleep lying down");
+            Console.WriteLine("Lions sleep lying down.");
         }
-
-        public virtual void Introduction()
-        {
-            Console.WriteLine("Meet our new " + this.CommonName + ", named " + this.IndividualName + ".");
-            Console.WriteLine(this.CommonName + "s are members of the class " + this.GenusName + ".");
-            Console.WriteLine("Their species name is " + this.SpeciesName + ".");
-        }
-
 
 
     }
