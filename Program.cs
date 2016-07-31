@@ -16,10 +16,14 @@ namespace Zoolandia
             lion.Eat();
             Console.WriteLine(" ");
             
-            Giraffe giraffe = new Giraffe("Raffi");
-            giraffe.Introduction();
-            giraffe.Sleep();
-            giraffe.Eat();
+            Giraffe giraffe1 = new Giraffe("Raffi");
+            Giraffe giraffe2 = new Giraffe("Barb", 3);
+            giraffe1.Introduction();
+            giraffe2.Introduction();
+            giraffe1.Sleep();
+            giraffe2.Sleep();
+            giraffe1.Eat();
+            giraffe2.Eat();
             Console.WriteLine(" ");
             
             Python python = new Python("Slinky");
@@ -35,7 +39,7 @@ namespace Zoolandia
             Console.WriteLine(" ");
             
             Console.WriteLine(bonobo.Die());
-            Console.WriteLine(giraffe.Die());
+            Console.WriteLine(giraffe1.Die());
 
         }
     }
