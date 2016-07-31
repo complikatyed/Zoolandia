@@ -20,7 +20,11 @@ namespace Zoolandia
         public virtual string Diet { get; set; }
         public virtual bool Wings { get; set; }
         public virtual int Legs { get; set; }
-        
+
+        public virtual bool Flying { get; set; }
+
+        public virtual string Sound { get; set; }
+
         public virtual void Sleep(){}
         // Sleep parameters might include:  nocturnal/diurnal, standing/hanging/lying, true/false
         
@@ -42,17 +46,46 @@ namespace Zoolandia
         {
             return swim;
         }
-        public virtual bool Fly( bool fly)
+        public virtual string Fly()
         {
-            return fly;
+            if (this.Flying) {
+                return "Look, I'm flying!";
+            }
+            else
+            {
+                return "Uh-oh!  I am not flying!  I am crashing!";
+            }
         }
-        public virtual bool Sound( bool sound)
+        public void DoSound()
         {
-            return sound;
+            Console.WriteLine(this.Sound);
         }
+        public void DoSound(string specialsound)
+        {
+            Console.WriteLine(specialsound);
+        }
+        public void DoSound(int soundnumber)
+        {
+            for(int i = soundnumber; i > 1; i--) 
+            {
+            Console.Write(this.Sound + "-");
+            }
+            Console.Write(this.Sound);
+            Console.Write(System.Environment.NewLine);
+        }
+        public void DoSound(int soundnumber, string specialsound)
+        {
+            for(int i = soundnumber; i > 1; i--) 
+            {
+            Console.Write(specialsound + "-");
+            }
+            Console.Write(specialsound);
+            Console.Write(System.Environment.NewLine);
+        }
+
         public virtual string Die()
         {
-            return "Oh no! " + this.IndividualName + " has died.";
+            return "Oh no! " + this.IndividualName + " the " + this.CommonName + " has died.";
         }
        
     }
