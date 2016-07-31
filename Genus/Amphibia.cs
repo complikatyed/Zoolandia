@@ -30,10 +30,6 @@ namespace Zoolandia.Genus
 
         }
 
-        public override bool Sound( bool sound)
-        {
-            return sound;
-        }
         public override void Reproduce(){
             // are all amphibians tadpole types? 
         }

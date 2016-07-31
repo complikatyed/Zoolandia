@@ -16,15 +16,7 @@ namespace Zoolandia.Genus
         {
             return swim;
         }
-        public override bool Fly( bool fly)
-        {
-            return fly;
-        }
 
-        public override bool Sound( bool sound)
-        {
-            return sound;
-        }
         public override void Reproduce(){
             Console.WriteLine("Mammals give birth to live young.");
         }
