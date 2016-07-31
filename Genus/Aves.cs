@@ -28,15 +28,11 @@ namespace Zoolandia.Genus
                 this.Diet = "omnivorous";
             }
         }
-        public bool Wings
+        public override bool Wings
         {
             get
             {
-                return this.Wings;
-            }
-            set
-            {
-                this.Wings = true;
+                return true;
             }
         }
 
