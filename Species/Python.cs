@@ -10,6 +10,8 @@ namespace Zoolandia.Species
            this.SpeciesName = "Python anchietae";
            this.CommonName = "python";
            this.IndividualName = nickname;
+           this.Wings = false;
+           this.Legs = 0;
         }
 
         public override void Sleep()
