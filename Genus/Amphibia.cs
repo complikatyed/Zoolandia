@@ -1,9 +1,7 @@
-using System;
-using Zoolandia;
 
 namespace Zoolandia.Genus
 {
-    public class Amphibia : Animal
+    public class Amphibia : Genus
     {
 
         public override string GenusName
@@ -11,10 +9,6 @@ namespace Zoolandia.Genus
             get
             {
                 return "amphibian";
-            }
-            set
-            {
-                this.GenusName = "amphibian";
             }
         }
 
@@ -24,14 +18,9 @@ namespace Zoolandia.Genus
             {
                 return "omnivorous";
             }
-            set
-            {
-                this.Diet = "omnivorous";
-            }
         }
 
-        public string SpeciesName{ get; set;}
-        public override bool Swim( bool swim)
+        public override bool Swim(bool swim)
         {
             return swim;
         }

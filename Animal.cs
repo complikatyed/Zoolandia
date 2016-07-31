@@ -1,16 +1,12 @@
 using System;
-using Zoolandia.Species;
 
 namespace Zoolandia
 {
     public class Animal
     {
-
-        //public Animal() {}
-
-        static string UppercaseFirst(string s)
+        public string UppercaseFirst(string s)
         {
-	        // Check for empty string.
+            // Check for empty string.
 	        if (string.IsNullOrEmpty(s))
 	        {
 	            return string.Empty;
@@ -56,13 +52,7 @@ namespace Zoolandia
         {
             return "Oh no! " + this.IndividualName + " has died.";
         }
-        // Die parameters:  are there any for this?
-
        
     }
-
-    // Properties --> add Mammal, Reptile, etc (family?)
-    // Can there be conditionals in methods, like 'if family is reptile, then reproduction is egg' ?
-    // Methods:  eating, sleeping, 
 
 }
