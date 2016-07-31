@@ -14,6 +14,8 @@ namespace Zoolandia.Species
            this.Diet = "omnivorous";
            this.Wings = false;
            this.Legs = optionalint;
+           this.Flying = false;
+           this.Sound = "eek";
         }
 
 

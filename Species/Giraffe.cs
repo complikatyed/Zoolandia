@@ -14,6 +14,7 @@ namespace Zoolandia.Species
            this.Diet = "herbivorous";
            this.Wings = false;
            this.Legs = optionalint;
+           this.Sound = "yawn";
         }
 
         public override void Sleep()

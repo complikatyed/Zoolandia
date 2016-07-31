@@ -14,6 +14,7 @@ namespace Zoolandia.Species
            this.Diet = "carnivorous";
            this.Wings = false;
            this.Legs = optionalint;
+           this.Sound = "roar";
         }
 
 
